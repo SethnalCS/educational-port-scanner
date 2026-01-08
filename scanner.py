@@ -15,3 +15,15 @@ def scan_ports(host, start_port, end_port):
         if scan_port(host, port):
             open_ports.append(port)
     return open_ports
+
+if __name__ == "main":
+    host = "127.0.0.1"
+    print(f"Scanning {host}")
+    open_ports = scan_ports(host, 20, 1024)
+
+    if open_ports:
+        print("Open ports found:")
+        for port in open_ports:
+            print(f"Port {port} is open")
+    else:
+        print("No open ports detected.")
