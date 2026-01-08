@@ -16,7 +16,7 @@ def scan_ports(host, start_port, end_port):
             open_ports.append(port)
     return open_ports
 
-if __name__ == "main":
+if __name__ == "__main__":
     host = "127.0.0.1"
     print(f"Scanning {host}")
     open_ports = scan_ports(host, 20, 1024)
