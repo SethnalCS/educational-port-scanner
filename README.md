@@ -9,7 +9,7 @@ Port scanning is commonly used by security professionals to identify exposed ser
 ## Features
 - TCP port scanning on localhost
 - Configurable port range
-- Timeout-based connection
+- Timeout-based connections
 - Safe and ethical design
 
 ## Technologies Used
@@ -17,9 +17,9 @@ Port scanning is commonly used by security professionals to identify exposed ser
 - socket library
 
 ## Ethical Use Notice
-This tool is strictly for educational use and should only be used on systems you own or have permision to test. Unauthorized port scanning is probably illegal.
+This tool is strictly for educational use and should only be used on systems you own or have permission to test. Unauthorized port scanning may be illegal.
 
-## What I learned
+## What I Learned
 - How TCP connections work at a basic level
 - How services listen on ports
 - Why exposed ports increase security risk
