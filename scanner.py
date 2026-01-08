@@ -1,1 +1,17 @@
+import socket
 
+def scan_port(host, port):
+    try:
+        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
+            sock.settimeout(0.5)
+            result = sock.connect_ex((host, port))
+            return result == 0
+    except Exception:
+        return False
+
+def scan_ports(host, start_port, end_port):
+    open_ports = []
+    for port in range(start_port, end_port + 1):
+        if scan_port(host, port):
+            open_ports.append(port)
+    return open_ports
